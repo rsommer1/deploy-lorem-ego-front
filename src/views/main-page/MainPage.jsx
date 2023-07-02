@@ -89,11 +89,11 @@ function MainPage() {
         </div>
         <div className="container">
           <div className="left-section">
-            <h2>Partidas en Curso</h2>
+            <h2 className="section-title">Partidas en Curso</h2>
             {inProgressGames && inProgressGames.length > 0 ? (
               inProgressGames.map((gameId) => (
                 <div key={gameId[0]} className="game-item">
-                  <p>{`Partida en curso ${gameId[0]}`}</p>
+                  <p className="game-info">{`Partida en curso ${gameId[0]}`}</p>
                   <Link to={`/Game/${gameId[0]}/${gameId[1]}/${gameId[2]}`}>
                     <button className="return-to-game-button">Volver a la partida</button>
                   </Link>
@@ -104,11 +104,11 @@ function MainPage() {
             )}
           </div>
           <div className="right-section">
-            <h2>Unirse a Partida</h2>
+            <h2 className="section-title">Unirse a Partida</h2>
             {openGames && openGames.length > 0 ? (
               openGames.map((gameId) => (
                 <div key={gameId} className="game-item">
-                  <p>{`Partida abierta ${gameId}`}</p>
+                  <p className="game-info">{`Partida abierta ${gameId}`}</p>
                   <button className="join-game-button" onClick={() => handleJoinGame(gameId)}>
                     Unirse a la partida
                   </button>

@@ -25,6 +25,8 @@
   font-family: Mono, sans-serif;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 55px;
 }
 
 .join-game-button {
@@ -36,6 +38,8 @@
   font-family: Mono, sans-serif;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 55px;
 }
 
 .container {
@@ -87,4 +91,19 @@
 .left-text2 p {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+
+.game-info {
+  background-color: #ffde59;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: Mono, sans-serif;
+  color: #dc3c4d;
+  margin: auto;
+  max-width: 260px;
+}
+
+.section-title {
+  margin-bottom: 55px;
 }
