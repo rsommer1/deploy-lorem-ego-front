@@ -1,0 +1,72 @@
+@import url("../../common/font.css");
+
+.instructions-title {
+  font-family: Mono, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #dc3c4d;
+}
+
+.instruction-text {
+  font-family: Mono, sans-serif;
+  background-color: #ffde59;
+  border-radius: 10px;
+  padding: 10px;
+  color: #dc3c4d;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.instruction-button {
+  font-family: Mono, sans-serif;
+  margin-right: 8px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #dc3c4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.piece-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.piece-name {
+  font-family: Mono, sans-serif;
+  background-color: #ffde59;
+  border-radius: 10px;
+  padding: 5px 35px;
+  color: #dc3c4d;
+  margin-bottom: 10px;
+  width: 150px;
+  font-weight: bold;
+}
+
+.instruction-image {
+  width: 200px;
+  height: 200px;
+}
+
+.piece-description {
+  font-family: Mono, sans-serif;
+  background-color: #ffde59;
+  border-radius: 10px;
+  padding: 10px;
+  color: #dc3c4d;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}

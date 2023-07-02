@@ -1,0 +1,17 @@
+/* Estilos generales */
+body {
+  background-color: #ebf094;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}

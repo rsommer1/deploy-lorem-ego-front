@@ -1,0 +1,59 @@
+@import url("../font.css");
+
+.navbar {
+    background-color: #dc3c4d;
+    border-bottom: 1px solid #ccc;
+    padding: 10 px;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+  }
+  
+  .navbar li {
+    background-color: #ffde59;
+    float: left;
+    padding: 14px 16px;
+  }
+
+  .navbar .nav-link {
+    color: #dc3c4d;
+    text-decoration: none;
+    font-family: Mono, sans-serif;
+  }
+
+  .navbar li:hover{
+    background-color: #faa94a;
+  }
+  
+  
+  .nav-link.active{
+    font-weight: bold;
+  }
+  
+  .navbar li :hover {
+    color: #fff;
+  }
+
+.navbar .logout-button {
+  background-color: #dc3c4d;
+  color: #ffde59;
+  font-weight: bold;
+  font-family: Mono, sans-serif;
+  padding: 0px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar .logout-button:hover {
+  background-color: #faa94a;
+}

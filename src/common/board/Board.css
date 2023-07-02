@@ -1,0 +1,11 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 63px); /*65px*/
+    grid-template-rows: repeat(10, 63px); /*65px*/
+    background-color: aqua;
+    width: 441px; /*455px*/
+    height: 630px; /*650px*/
+    margin: 0 auto;
+    margin-top: 40px;
+
+}

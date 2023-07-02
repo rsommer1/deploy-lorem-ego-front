@@ -1,0 +1,15 @@
+.turn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffde59;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Mono, sans-serif;
+    color: #dc3c4d;
+    max-width: 200px;
+    margin-left: 520px;
+  }

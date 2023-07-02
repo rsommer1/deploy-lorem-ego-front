@@ -1,0 +1,25 @@
+@import url("../../common/font.css");
+
+.right-text {
+    position: relative; 
+    margin-left: 700px; 
+    left: -150px;
+    padding: 10px; 
+    display: block; 
+    border-radius: 10px; 
+    background-color: #ffde59;
+    margin-top: 60px;
+    color: #dc3c4d;
+    font-family: Mono, sans-serif;
+  }
+  
+  .right-text .avatar {
+    width: 225px;
+    height: 150px;
+    margin-top: -10px;
+    position: absolute;
+    left: -400px;
+    background-color: #ffde59;
+    border-radius: 5px; 
+    padding: 12px;
+  }

@@ -1,0 +1,55 @@
+.tile {
+    width: 61px;
+    height: 61px;
+
+}
+
+.orange-tile {
+    background-color:   #ffde59;
+    border: 2px solid black;
+    display: grid;               /* None */
+    place-content: center;       /* None */
+}
+
+.red-tile {
+    background-color:  #dc3c4d;
+    border: 2px solid black;
+    display: grid;         /* None */
+    place-content: center; /* None */
+}
+
+.tile .piece {
+    width: 45px;         /* 61px */
+    height: 45px;       /* 61px */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tile .piece:hover {
+    cursor: grab;
+}
+
+.tile .piece:active {
+    cursor: grabbing;
+}
+
+.tile img {
+    width: 80px;
+}
+
+.tile-highlight:not(.piece-tile)::before {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tile-highlight.piece-tile::before {
+    position: absolute;
+    content: " ";
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
