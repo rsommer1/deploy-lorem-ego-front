@@ -1,3 +1,3 @@
-const VITE_BACKEND_URL = "https://my-books-api.onrender.com";
+const VITE_BACKEND_URL = "https://lorem-ego-back.onrender.com";
 
 export default VITE_BACKEND_URL;
