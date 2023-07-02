@@ -6,6 +6,7 @@ import NavBar from "../../common/NavBar/NavBar";
 import React, { useEffect, useState } from "react";
 import UserCheck from "../protected/UserCheck";
 import axios from "axios";
+import VITE_BACKEND_URL from "../../config";
 
 function Game() {
   const { id, playerid, color } = useParams();
@@ -13,7 +14,7 @@ function Game() {
   const [gameStage, setGameStage] = useState("");
 
   React.useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/game/${playerid}`)
+    axios.get(`${VITE_BACKEND_URL}/game/${playerid}`)
       .then((response) => {
         const turn = response.data.turn;
         const stage = response.data.stage;

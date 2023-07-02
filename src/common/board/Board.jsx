@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Board.css";
 import Tile from "../Tile/Tile";
 import axios from "axios";
+import VITE_BACKEND_URL from "../../config";
 
 import bandera_rojo from "../../../public/assets/images/tokens/token_bandera/bandera_rojo.png";
 import bandera_azul from "../../../public/assets/images/tokens/token_bandera/bandera_azul.png";
@@ -40,7 +41,7 @@ function Board({ id, playerid, color }) {
   const [pieces, setPieces] = React.useState([]);
 
     React.useEffect(()=> {
-        axios.get(`${import.meta.env.VITE_BACKEND_URL}/pieces/${id}`)
+        axios.get(`${VITE_BACKEND_URL}/pieces/${id}`)
         .then((response) => {
             const setUpPieces = response.data.result.map((piece) => {
             let image;
@@ -207,7 +208,7 @@ function Board({ id, playerid, color }) {
 
     
       try {
-        const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/pieces/move`, data);
+        const response = await axios.post(`${VITE_BACKEND_URL}/pieces/move`, data);
         const isValidMove = response.data.result; // Reemplaza "isValidMove" con la propiedad correcta de la respuesta del backend
     
         return isValidMove;

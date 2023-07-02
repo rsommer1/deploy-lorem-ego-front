@@ -4,6 +4,7 @@ import './Login.css';
 import axios from 'axios';
 import { AuthContext } from '../../auth/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import VITE_BACKEND_URL from '../../config';
 
 function Login() {
   const { setToken } = useContext(AuthContext);
@@ -18,7 +19,7 @@ function Login() {
       password
     };
 
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/authentication/login`, data)
+    axios.post(`${VITE_BACKEND_URL}/authentication/login`, data)
       .then((response) => {
         const access_token = response.data.accessToken;
         setToken(access_token);

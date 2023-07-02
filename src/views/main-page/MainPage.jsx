@@ -6,7 +6,7 @@ import axios from "axios";
 import jwtDecode from 'jwt-decode'
 import "./MainPage.css";
 import UserCheck from "../protected/UserCheck";
-
+import VITE_BACKEND_URL from "../../config";
 
 
 function MainPage() {
@@ -25,7 +25,7 @@ function MainPage() {
     // Despliegue de Partidas en Curso
     const fetchInProgressGames = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/game/ongoing/${userId}`);
+        const response = await axios.get(`${VITE_BACKEND_URL}/game/ongoing/${userId}`);
         const { games } = response.data;
         setInProgressGames(games);
       } catch (error) {
@@ -36,7 +36,7 @@ function MainPage() {
     // Despliegue de Partidas para Unirse
     const fetchOpenGames = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/game/joinable/${userId}`);
+        const response = await axios.get(`${VITE_BACKEND_URL}/game/joinable/${userId}`);
         const { games } = response.data;
         setOpenGames(games);
       } catch (error) {
@@ -56,7 +56,7 @@ function MainPage() {
     };
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/game/create`, data);
+      const response = await axios.post(`${VITE_BACKEND_URL}/game/create`, data);
 
     } catch (error) {
       console.log(error);
@@ -71,7 +71,7 @@ function MainPage() {
     };
 
     try {
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/game/join`, data);
+      await axios.post(`${VITE_BACKEND_URL}/game/join`, data);
     } catch (error) {
       console.log(error);
     }
